@@ -1,0 +1,54 @@
+syntax = "proto3";
+package protoComm;
+
+message empty{
+}
+
+// 基本账户信息
+message source {
+  // 店铺ID
+  int64 store_id = 1;
+  // 用户ID
+  int64 uid = 2;
+  // 企业用户ID
+  int64 customer_id = 3;
+  // 请求来源 0后台管理 1企业管理端 2用户管理端 3用户客户端
+  int32 type = 4;
+  // 平台来源
+  int32 platform = 5;
+  // 当前时区（店铺时区）
+  int64 time_zone = 6;
+}
+
+// 分页
+message pageInfo {
+  int64 page = 1;
+  int64 page_size = 2;
+  string order_key = 3;
+}
+
+message resultPage {
+  bytes list = 1;
+  int64 total = 2;
+}
+
+// 默认提交
+message req {
+  bytes data = 4;
+}
+
+// 默认输出
+message result {
+  int32 code = 1;
+  string message = 2;
+  map<string, string> header = 3;
+  bytes data = 4;
+}
+
+// 使用到的权益调用数据
+message UseBenefit {
+  int32 id = 1; // 关联的调用序号ID
+  int32 type = 2; // 权益类型 1 用户等级 2 权益卡 3 企业应用活动
+  int64 aid = 3; // 关联的权益ID
+  map<string, string> value = 4; // 插件值
+}

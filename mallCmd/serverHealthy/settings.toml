@@ -1,0 +1,31 @@
+[log]
+remote = true
+hour = 0
+
+[nsq]
+address = "192.168.2.23:4150"
+lookup = "192.168.2.23:4161"
+max_in_flight = 1
+
+[redis]
+addr = ["127.0.0.1:6379"] # 集群节点地址
+#password = "icaitun.com.2022@co" # REDIS 密码
+max_redirects = 8 # 集群指定 当遇到网络错误或者MOVED/ASK重定向命令时，最多重试几次，默认8
+read_only = true # 集群指定 置为true则允许在从节点上执行只含读操作的命令
+cluster = false # 是否为集群链接模式
+
+[mongo]
+url = "192.168.2.23:27017,192.168.2.23:27018"
+database = "test"
+# 保持空闲的最大时间,单位: 秒
+max_conn_idle_time = 180
+# 连接池大小,设置为机器能承受的最大值
+max_pool_size = 2
+auth_source = "mall_base"
+username = "kf000"
+password = "xx123456789"
+
+[servants]
+#server_admin_micro = "mall.serverAdmin.microObj@tcp -h 192.168.2.110 -p 10202 -t 60000"
+#server_base = "mall.serverBase.sysObj@tcp -h 192.168.2.110 -t 60000 -p 10307"
+#server_mini_micro = "mall.serverMiniProgram.microObj@tcp -h 192.168.2.199 -p 20610 -t 60000"

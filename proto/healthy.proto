@@ -1,0 +1,104 @@
+syntax = "proto3";
+package protoHealthy;
+import "comm.proto";
+
+message BodyParam {
+  //身体参数对照表ID
+  int64 id = 1;
+  //性别 1 男 2 女
+  int32 sex = 2;
+  //年龄
+  int32 age = 3;
+  //身高cm
+  float high = 4;
+  //体重kg
+  float weight = 5;
+  //体重指数
+  float BMI = 6;
+  int64 created_at = 7;
+  int64 updated_at = 8;
+}
+
+message ReqBodyParamPage{
+  protoComm.pageInfo page = 1;
+  float bmi= 2;
+}
+
+message ResBodyParamPage{
+  repeated BodyParam list = 1;
+  int64 total = 2;
+}
+
+message Food {
+  int64 id = 1;
+  //食物名称
+  string name = 2;
+  //热量 kcal/100g
+  float heat = 3;
+  //能量j/100g
+  float energy = 4;
+  // 图片 JSON数组对应图片ID 最多上传15张
+  repeated string pic = 5;
+  int64 created_at = 7;
+  int64 updated_at = 8;
+}
+message ReqFoodPage{
+  protoComm.pageInfo page = 1;
+  string name = 2;
+}
+
+message ResFoodPage{
+  repeated Food list = 1;
+  int64 total = 2;
+}
+
+message Sports {
+  int64 id = 1;
+  string name = 2;
+  repeated string equipment = 3;
+  int32 hour = 4;
+  int64 created_at = 7;
+  int64 updated_at = 8;
+}
+
+message ReqSportsPage{
+  protoComm.pageInfo page = 1;
+  string name = 2;
+}
+
+message ResSportsPage{
+  repeated Sports list = 1;
+  int64 total = 2;
+}
+
+message ReqId {
+  int64 id = 1;
+}
+
+service Healthy {
+  // 身体参数分页
+  rpc BodyParamPage(ReqBodyParamPage) returns (ResBodyParamPage) {}
+  //添加身体参数
+  rpc BodyParamSave(BodyParam) returns (BodyParam) {}
+  //获取身体参数列表
+  rpc BodyParamList(ReqId) returns (BodyParam) {}
+  //删除身体参数
+  rpc BodyParamDelete(BodyParam) returns (protoComm.result) {}
+  // 食物分页
+  rpc FoodPage(ReqFoodPage) returns (ResFoodPage) {}
+  //添加食物
+  rpc FoodSave(Food) returns (Food) {}
+  //获取食物列表
+  rpc FoodList(ReqId) returns (Food) {}
+  //删除食物
+  rpc FoodDelete(Food) returns (protoComm.result) {}
+  // 运动分页
+  rpc SportsPage(ReqSportsPage) returns (ResSportsPage) {}
+  //添加运动
+  rpc SportsSave(Sports) returns (Sports) {}
+  //获取运动列表
+  rpc SportsList(ReqId) returns (Sports) {}
+  //删除身体参数
+  rpc SportsDelete(Sports) returns (protoComm.result) {}
+  // 根据身体参数推荐饮食和运动
+}
