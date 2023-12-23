@@ -1,11 +1,11 @@
 package handler
 
 import (
+	"MyTestMall/mallBase/basics/pkg/app"
+	"MyTestMall/mallBase/server/pkg/database/orm"
+	protoComm "MyTestMall/protoImp/comm"
+	protoHealthy "MyTestMall/protoImp/healthy"
 	"context"
-	"gitlab.mall.com/mallBase/basics/pkg/app"
-	"gitlab.mall.com/mallBase/server/pkg/database/orm"
-	protoComm "gitlab.mall.com/mallModel/protoImp/base/comm"
-	protoHealthy "mall/mallUser/qinwong/protoImp/healthy"
 	"serverHealthy/modelHealthy"
 	"serverHealthy/service"
 )

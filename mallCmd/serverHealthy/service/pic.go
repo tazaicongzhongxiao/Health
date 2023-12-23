@@ -1,10 +1,10 @@
 package service
 
 import (
+	"MyTestMall/mallBase/basics/pkg/app"
+	"MyTestMall/mallBase/server/pkg/database/mongo"
 	"fmt"
 	json "github.com/json-iterator/go"
-	"gitlab.mall.com/mallBase/basics/pkg/app"
-	"gitlab.mall.com/mallBase/server/pkg/database/mongo"
 	"go.mongodb.org/mongo-driver/bson"
 	"image"
 	_ "image/jpeg"

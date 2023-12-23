@@ -1,11 +1,11 @@
 package handler
 
 import (
+	"MyTestMall/mallBase/basics/pkg/app"
+	"MyTestMall/mallBase/server/pkg/database/orm"
+	protoComm "MyTestMall/protoImp/comm"
+	protoHealthy "MyTestMall/protoImp/healthy"
 	"context"
-	protoHealthy "mall/mallUser/qinwong/protoImp/healthy"
-	"myTestMall/mallBase/basics/pkg/app"
-	"myTestMall/mallBase/server/pkg/database/orm"
-	protoComm "myTestMall/mallModel/protoImp/base/comm"
 	"serverHealthy/modelHealthy"
 	"serverHealthy/service"
 )

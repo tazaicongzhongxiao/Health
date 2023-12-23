@@ -1,11 +1,11 @@
 package main
 
 import (
+	"MyTestMall/mallBase/basics/pkg/app"
+	"MyTestMall/mallBase/basics/pkg/dredis"
+	"MyTestMall/mallBase/server/pkg/database/mongo"
+	protoHealthy "MyTestMall/protoImp/healthy"
 	"github.com/TarsCloud/TarsGo/tars"
-	"gitlab.mall.com/mallBase/basics/pkg/app"
-	"gitlab.mall.com/mallBase/basics/pkg/dredis"
-	"gitlab.mall.com/mallBase/server/pkg/database/mongo"
-	protoHealthy "mall/mallUser/qinwong/protoImp/healthy"
 	"serverHealthy/handler"
 	"serverHealthy/modelHealthy"
 )

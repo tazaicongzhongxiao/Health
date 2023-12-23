@@ -1,10 +1,10 @@
 package service
 
 import (
-	"gitlab.mall.com/mallBase/basics/pkg/app"
-	"gitlab.mall.com/mallBase/server/pkg/database/mongo"
-	"gitlab.mall.com/mallBase/server/pkg/database/orm"
-	"gitlab.mall.com/mallBase/server/pkg/pager"
+	"MyTestMall/mallBase/basics/pkg/app"
+	"MyTestMall/mallBase/server/pkg/database/mongo"
+	"MyTestMall/mallBase/server/pkg/database/orm"
+	"MyTestMall/mallBase/server/pkg/pager"
 	"go.mongodb.org/mongo-driver/bson"
 	"serverHealthy/modelHealthy"
 )

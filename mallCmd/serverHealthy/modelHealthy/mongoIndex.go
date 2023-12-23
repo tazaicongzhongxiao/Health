@@ -1,6 +1,6 @@
 package modelHealthy
 
-import mongo "gitlab.mall.com/mallBase/basics/pkg/mongo"
+import mongo "MyTestMall/mallBase/basics/pkg/mongo"
 
 func HealthyIndex() map[string]interface{} {
 	var req = make(map[string]interface{})

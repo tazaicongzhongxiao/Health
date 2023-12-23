@@ -60,9 +60,10 @@ func Err(code int32, format string, args ...interface{}) error {
 	if code == 0 {
 		code = Fail
 	}
-	return tars.Errorf(code, fmt.Sprintf(format, args))
+	return tars.Errorf(code, fmt.Sprintf(format, args...))
 }
 
+// ErrCode 获取 tars错误code 返回1为系统err错误
 func ErrCode(err error) int32 {
 	return tars.GetErrorCode(err)
 }
@@ -70,7 +71,7 @@ func ErrCode(err error) int32 {
 func IdInt(Id string, empty bool) (ID uint64, err error) {
 	if Id != "" {
 		ID, errs := strconv.ParseUint(Id, 10, 64)
-		if err == nil {
+		if errs == nil {
 			return ID, errs
 		} else {
 			return 0, errors.New("IdIsInt")
@@ -78,11 +79,12 @@ func IdInt(Id string, empty bool) (ID uint64, err error) {
 	} else if empty == true {
 		return 0, errors.New("IdIsInt")
 	}
-	return 0, errors.New("IdIsInt")
+	return 0, nil
 }
 
 // Println
 // @Description: start 调试一段程序消耗的 时间
+// @param c 1Red 2Green 3Yellow 4Blue 5Magenta 6Cyan 7White
 // @param req
 func Println(c int, req ...interface{}) {
 	if start > 0 {
