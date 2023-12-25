@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8110ad57-be62-4709-8798-dcc07bd945a3" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mallBase/basics/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/mallBase/basics/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mallBase/client/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/mallBase/client/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mallBase/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/mallBase/server/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +22,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../Program Files/Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -41,7 +44,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/MyTestMall",
+    "last_opened_file_path": "D:/project/mall",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
