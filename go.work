@@ -1,6 +1,7 @@
 go 1.20
 
 use (
-	mallCmd/serverHealthy
-	mallBase/server
+	mallCmd/clientHealthy
+	mallBase/client
+	mallBase/basics
 )

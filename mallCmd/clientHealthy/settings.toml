@@ -1,0 +1,27 @@
+[jwt]
+secret = "MIICWwIBAAKBgQCraRwunSw1bMXeGL908hnY6mVbWzp2nlIq3o6UKYd+uYcquX0Q\nGQrLU41LLdUYiM6RwNO8X+Z4RZPUWwgmHU5GfYk48u0oBW39qq8RlaMILgVY2PoV\nZeiEHPeL6e0NjYLyGWhPgrDqba8jUrWSjBXvQHhmfYUoBWDk/6jWesnGYQIDAQAB\nAoGASj+JeZeTYsDvJLlLlXiZQaCmrt/hfygtJ2yoDf2/N2Fd71/RkHuIdXKHrZz4\nxVvdPr1r+hkAV/CrjDyyVvAyyxhEzGu2GTlSxRKuu59vP+UQVK2ssc5DOnouwcj3\n3owQo+ZWczcyqjyerC5dHeLN6yDdE/OBRq3rM7lAVgG4xAECQQDbER96fxgmHmwH\nx8FWmezwGhE57Ava2EC7PEHCZngZokFbbAnU/7Z9vm+cbyaHcLsiqoWa9H9hPSv/\n28B4besxAkEAyE8m66fpkcsFMlNvbbjs4xa69ctq8iWTKMytLGFl+6iQNvwBc8fF\nT+sjxu2vAPfBBeMLjWzR6hC78/gXCWdiMQJAGwgu4TfDrBh+7irZEa2mzi35SDN3\ndwbOXgxedPWeBlO+SuC3CeCQDU4tiZkxoO7pOKrgF7Hp8f7Rah4czv+JUQJAKFz6\nxMXDJSO52lhBveRjp6bu6ZSh6kV0D+aehrDhsgJXfRzu1fvNYLtLLEy81P8XoC4O\nJ+NjsTzKAvFdAwIYIQJANcXbQytDxQSQDf81ouovW0vXdk0USH/gWhB1w9bIReNF\nTB+r9XOMCG8a6cK9QVseJjoEXA/lG+cP2vWbmkZ+PQ=="
+timeout = 360
+
+[log]
+remote = true
+hour = 0
+
+[redis]
+addr = ["127.0.0.1:6379"] # 集群节点地址
+#password = "icaitun.com.2022@co" # REDIS 密码
+max_redirects = 8 # 集群指定 当遇到网络错误或者MOVED/ASK重定向命令时，最多重试几次，默认8
+read_only = true # 集群指定 置为true则允许在从节点上执行只含读操作的命令
+cluster = false # 是否为集群链接模式
+
+[conf]
+token_day = 1
+
+[application]
+domain = "localhost:800011"
+ishttps = false
+mode = "dev"
+readtimeout = 1
+writertimeout = 2
+
+[servants]
+server_healthy = "mall.serverHealthy.healthyObj@tcp -h 192.168.2.139 -p 21001 -t 60000"

@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8110ad57-be62-4709-8798-dcc07bd945a3" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/config.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/handler/bodyParam.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/handler/food.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/handler/sports.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/modelHealthy/mongoIndex.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/modelHealthy/mongodb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/service/boduParam.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/service/food.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/service/pic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/service/sports.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mallCmd/serverHealthy/settings.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mallBase/basics/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/mallBase/basics/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Zpqbr7W9lkstjycFNWlPTTiwpr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +41,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/Health/mallCmd",
+    "last_opened_file_path": "D:/MyTestMall",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
